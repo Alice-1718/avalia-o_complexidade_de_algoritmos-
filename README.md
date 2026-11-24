@@ -49,6 +49,8 @@ Pistas para começar
     }
   ```
 - contantes (primitivas):
+| primitivas | variav.|
+| ---------- | ------ |
 | c1 i= | 1  |
 | c2 i< | n|
 | c3 i++ | n |
