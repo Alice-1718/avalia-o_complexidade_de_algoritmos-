@@ -48,7 +48,7 @@ Pistas para começar
       }
     }
   ```
-- contantes (primitivas):
+- constantes (primitivas):
 
 | primitivas | variav.|
 | ---------- | ------- |
@@ -73,13 +73,14 @@ Pistas para começar
 | c19 v[menor] | n |
 | c20 = | n |
 
+f(n) = 11n + 8n² + 1
 
 *adicionar um contador de primitivas para comprovar que ta batendo o valor de f(n) apresentado aqui com o do codigo
 
 - tabela:
 
 | c₁·g(n) | f(n) | c₂·g(n) |
-f(n) = 11n + 8n² + 1
+
 
 
 classe utilizada Θ(n²)
