@@ -49,19 +49,35 @@ Pistas para começar
     }
   ```
 - contantes (primitivas):
-c1 i=
-c2 i<
-c3 i++
-c4 menor =
-c5 j=
+| c1 i= | 1  |
+| c2 i< | n|
+| c3 i++ | n |
+| c4 menor = | n|
+| c5 j= | n|
+| c6 j< | n²|
+| c7 j++ | n²|
+| c8 j > | n²|
+| c9 && | n²|
+| c10 v[j] | n²|
+| c11 < | n²|
+| c12 v[menor] | n²|
+| c13 menor= | n²|
+| c14 aux= | n|
+| c15 v[i] | n|
+| c16 v[i] | n|
+| c17  = | n|
+| c18 v[menor] | n |
+| c19 v[menor] | n |
+| c20 = | n |
 
 
-
-  adicionar um contador de primitivas para comprovar que ta batendo o valor de f(n) apresentado aqui com o do codigo
+*adicionar um contador de primitivas para comprovar que ta batendo o valor de f(n) apresentado aqui com o do codigo
 
 - tabela:
 
 | c₁·g(n) | f(n) | c₂·g(n) |
+f(n) = 11n + 8n² + 1
+
 
 classe utilizada Θ(n²)
 
