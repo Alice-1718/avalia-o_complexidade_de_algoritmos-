@@ -33,7 +33,7 @@ Pistas para começar
   - descrição: é o código original fornecido
 
   - código:
-  ```python
+  ```c
     void selecao(int v[], int n) {
       for (int i = 0; i < n; i++) {
         int menor = i;
@@ -53,11 +53,11 @@ Pistas para começar
 | primitivas | variav.|
 | ---------- | ------- |
 | c1 i= | 1  |
-| c2 i< | n |
+| c2 i< | n + 1 |
 | c3 i++ | n |
 | c4 menor = | n |
 | c5 j= | n |
-| c6 j< | n² |
+| c6 j< | n² + n |
 | c7 j++ | n² |
 | c8 j > | n² |
 | c9 && | n² |
@@ -73,38 +73,40 @@ Pistas para começar
 | c19 v[menor] | n |
 | c20 = | n |
 
-f(n) = 11n + 8n² + 1
+f(n) = 8n² + 12n + 2
 
-*adicionar um contador de primitivas para comprovar que ta batendo o valor de f(n) apresentado aqui com o do codigo
+c1 = 8n²
+c2 = 12n
 
 - tabela:
-
 | c₁·g(n) | f(n) | c₂·g(n) |
+| ------- | ---- | ------- |
+| 1  | 8      | 22      | 22      |
+| 2  | 32     | 58      | 88      |
+| 3  | 72     | 110     | 198     |
+| 4  | 128    | 178     | 352     |
+| 5  | 200    | 262     | 550     |
+| 6  | 288    | 362     | 792     |
+| 7  | 392    | 478     | 1078    |
+| 8  | 512    | 610     | 1408    |
 
-
-
-classe utilizada Θ(n²)
 
 - gráfico das tres curvas:
+  ```mermaid
+  xychart-beta
+      title "Gráfico"
+      x-axis [1,2,3,4,5,6,7,8]
+      y-axis "resultados" 0 --> 1000
+      line [120, 250, 380, 520, 610, 890]
+  ```
 
-- Algoritmo recursivo
+- Algoritmo recursivo 
   (Fibonacci): a análise é a recorrência T(n), calculada na tabela, como na última aula
 
-- valores de entrada utilizados:
-  
-- resultado do código (saída):
-  tem sempre que dar o mesmo resultado
-  
-- tempo de execução:
-  • usar 8 tamanhos de n e 5 repetições
-  • utilizar graficos para comparar esta refatoração com a ultima qual foi mais rapida
-  • Implementem todas as versões numa mesma linguagem e meçam o tempo de execução com pelo menos 8 tamanhos de n e 5 repetições por tamanho (usem a mediana)
-  • Gráficos obrigatórios: tempo × n de todas as versões no mesmo plano; e tempo ÷ f(n) × n (se
-a análise estiver certa, essa razão tende a ficar parada).
-  • Mostrem o ganho total: quantas vezes a v6 é mais rápida que a v0 no maior n que as duas
-conseguem rodar.
 
-
+  Tempo de execução: 0.000006 segundos
+  entrada : 20000, 9000, 5000, 1000, 3000, 10000, 7000, 6000
+  saída (vetor ordenado): 1000 3000 5000 6000 7000 9000 10000 20000 
 
 
   
